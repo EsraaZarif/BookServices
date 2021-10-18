@@ -33,13 +33,7 @@ namespace BookServices
            DateTime d= Date.AddDays(number);
             return d;
         }
-        public string converttodate(DateTime dateTime)
-        {
-
-            DateTime dt = DateTime.ParseExact(dateTime.ToString(), "MM/dd/yyyy hh:mm:ss tt", CultureInfo.InvariantCulture);
-            string s = dt.ToString("dd/M/yyyy", CultureInfo.InvariantCulture);
-            return s;
-        }
+     
         public DateTime CalulateDate(DateTime start,int AfterIndex, int[] Days)
         {
             int NumToAdd = 0;
@@ -54,7 +48,6 @@ namespace BookServices
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
         public void Get(DateTime StartDate, int[] Days, int num)
         {
-            //int[] Days =new int[2] { 1,3};
             ResponseModelView response = new ResponseModelView();
             List<SessionsScheduled> list = new List<SessionsScheduled>();
             DateTime lastdate =StartDate;
