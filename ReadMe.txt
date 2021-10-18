@@ -4,3 +4,7 @@ Call Method using :
        *StartDate: is the First input
        *Days :is the array of Days like [1,2]
        *num  :is the num of sessions need to study one chapter
+
+
+GitHub Resource :
+    https://github.com/EsraaZarif/BookServices.git
